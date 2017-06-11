@@ -2,13 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import {TabViewModule, DataTableModule, SharedModule, PaginatorModule}  from "primeng/primeng";
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GridComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TabViewModule,
+    DataTableModule, 
+    SharedModule,
+    PaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
