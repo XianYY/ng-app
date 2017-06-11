@@ -1,0 +1,3 @@
+<p-dataTable [value]="cars" [rows]="10" [paginator]="true" [paginatorPosition]="both" selectionMode="single" dataKey="id" responsive="false">
+  <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header" sortable="true" [filter]="true" filterPlaceholder="Search"></p-column>
+</p-dataTable>
